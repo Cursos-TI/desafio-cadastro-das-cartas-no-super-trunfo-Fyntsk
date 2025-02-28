@@ -2,7 +2,7 @@
 
     int main(){    
         char estado[20], cidade[22];
-        float populacao;
+        int populacao;
     
 
         printf("Digite seu estado:");
@@ -12,10 +12,12 @@
         scanf("%s", cidade);
 
         printf("Digite a população:");
-        scanf("%f", &populacao);
+        scanf("%d", &populacao);
 
-        printf("Nome do Estado: %s\n - Nome da Cidade: %s\n", estado, cidade);
-        printf("População: %f Milhões", populacao);
+        printf("Carta 01\n");
+        printf("Nome do Estado: %s\n", estado);
+        printf("Nome da cidade: %s\n", cidade);
+        printf("População: %d habitantes", populacao);
         
 
 
