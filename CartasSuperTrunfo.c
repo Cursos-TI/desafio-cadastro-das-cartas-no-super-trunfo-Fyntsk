@@ -48,7 +48,7 @@
         scanf("%d", &pontosturisticos2);
 
         
-        printf("Carta 01\n");
+        printf("CARTA 1\n");
         printf("Código da carta: %s\n", codigo);
         printf("Nome do Estado: %s\n", estado);
         printf("Nome da cidade: %s\n", cidade);
@@ -57,7 +57,7 @@
         printf("PIB de: %.2f bilhões de reais\n", pib);
         printf("Pontos turísticos: %d\n", pontosturisticos);
 
-        printf("Carta 02\n");
+        printf("CARTA 2\n");
         printf("Código da carta: %s\n", codigo2);
         printf("Nome do Estado: %s\n", estado2);
         printf("Nome da cidade: %s\n", cidade2);
