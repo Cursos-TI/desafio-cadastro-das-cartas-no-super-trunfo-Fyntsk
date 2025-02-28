@@ -17,7 +17,7 @@
         printf("Digite a população:");
         scanf("%d", &populacao);
 
-        printf("Digite a área em M²:");
+        printf("Digite a área:");
         scanf("%f", &area);
 
         printf("Digite o PIB:");
@@ -38,7 +38,7 @@
         printf("Digite a população:");
         scanf("%d", &populacao2);
 
-        printf("Digite a área em M²:");
+        printf("Digite a área:");
         scanf("%f", &area2);
 
         printf("Digite o PIB:");
