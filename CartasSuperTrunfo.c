@@ -17,15 +17,18 @@
         
         printf("Digite sua cidade:");
         fgets(cidade, sizeof (cidade), stdin);
-
+        
         printf("Digite a população:");
         scanf("%lu", &populacao);
+        getchar();
 
         printf("Digite a área:");
         scanf("%f", &area);
+        getchar();
 
         printf("Digite o PIB:");
         scanf("%f", &pib);
+        getchar();
 
         printf("Digite o número de pontos turísticos:");
         scanf("%d", &pontosturisticos);
@@ -49,15 +52,19 @@
 
         printf("Digite a população:");
         scanf("%lu", &populacao2);
+        getchar();
 
         printf("Digite a área:");
         scanf("%f", &area2);
+        getchar();
 
         printf("Digite o PIB:");
         scanf("%f", &pib2);
+        getchar();
 
         printf("Digite o número de pontos turísticos:");
         scanf("%d", &pontosturisticos2);
+        getchar();
                 
         
         //NOVOS ATRIBUTOS INSERIDOS NÍVEL INTERMEDIARIO UTILIZANDO OPERADORES ARITMÉTICOS
@@ -104,49 +111,49 @@
                 
         //COMPARAÇÃO ENTRE UM ATRIBUTO ESPECIFICO DAS CARTAS PARA DETERMINAR UM VENCEDOR      
         if (populacao > populacao2){
-            printf("RESULTADO: A carta 01 - %s Venceu!\n", estado);
+            printf("RESULTADO - A carta vencedora é: CARTA 01 - %s\n", estado);
         } else {
-            printf("RESULTADO: A carta 02 - %s venceu!\n", estado2);
+            printf("RESULTADO - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
-         printf("\n");
+         printf("\n\n");
 
         //COMPARAÇÃO ENTRE TODOS OS ATRIBUTOS UTILIZANDO IF-ELSE
 
         printf("** COMPARAÇÃO ENTRE TODOS OS ATRIBUTOS** (Vence o maior valor, exceto para densidade populacional)\n");
         if (populacao > populacao2){
-            printf("POPULAÇÃO: A carta 01 - %s Venceu!\n", estado);
+            printf("POPULAÇÃO: A carta vencedora é - CARTA 01 - %s\n", estado);
         } else {
-            printf("POPULAÇÃO: A carta 02 - %s venceu!\n", estado2);
+            printf("POPULAÇÃO: A carta vencedora é - CARTA 02 - %s\n", estado2);
         }
         if ( area > area2 ){
-            printf("ÁREA: A carta 01 - %s Venceu!\n", estado);
+            printf("ÁREA - A carta vencedora é: CARTA 01 - %s\n", estado);
         } else {
-            printf("ÁREA: A carta 02 - %s venceu!\n", estado2);
+            printf("ÁREA - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
         if ( pib > pib2 ){
-            printf("PIB: A carta 01 - %s Venceu!\n", estado);
+            printf("PIB - A carta vencedora é: CARTA 01- %s\n", estado);
         } else {
-            printf("PIB: A carta 02 - %s venceu!\n", estado2);
+            printf("PIB - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
         if ( pontosturisticos > pontosturisticos2 ){
-            printf("PONTOS TURÍSTICOS: A carta 01 - %s Venceu!\n", estado);
+            printf("PONTOS TURÍSTICOS - A carta vencedora é: CARTA 01 - %s\n", estado);
         } else {
-            printf("PONTOS TURÍSTICOS: A carta 02 - %s venceu!\n", estado2);
+            printf("PONTOS TURÍSTICOS - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
         if ( densidade < densidade2 ){
-            printf("DENSIDADE: A carta 01 - %s Venceu!\n", estado);
+            printf("DENSIDADE - A carta vencedora é: CARTA 01 - %s\n", estado);
         } else {
-            printf("DENSIDADE: A carta 02 - %s venceu!\n", estado2);
+            printf("DENSIDADE - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
         if ( pibpercapita > pibpercapita2 ){
-            printf("PIB PER CAPITA: A carta 01 - %s Venceu!\n", estado);
+            printf("PIB PER CAPITA - A carta vencedora é: CARTA 01 - %s\n", estado);
         } else {
-            printf("PIB PER CAPITA: A carta 02 - %s venceu!\n", estado2);
+            printf("PIB PER CAPITA - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
         if ( superPoder1 > superPoder2 ){
-            printf("SUPER PODER: A carta 01 - %s Venceu!\n", estado);
+            printf("SUPER PODER - A carta vencedora é: CARTA 01 - %s\n", estado);
         } else {
-            printf("SUPER PODER: A carta 02 - %s venceu!\n", estado2);
+            printf("SUPER PODER - A carta vencedora é: CARTA 02 - %s\n", estado2);
         }
 
 
