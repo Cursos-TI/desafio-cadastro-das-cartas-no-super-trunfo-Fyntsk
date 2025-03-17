@@ -1,7 +1,7 @@
 #include <stdio.h>
 
     int main(){    //VARIAVEIS//
-        char estado[20], cidade[22], codigo[10], estado2[20], cidade2[22], codigo2[10];
+        char estado[20], cidade[22], codigo[10], estado2[30], cidade2[40], codigo2[15];
         int pontosturisticos, pontosturisticos2;
         unsigned long int populacao, populacao2;
         float area, pib, area2, pib2;
@@ -10,13 +10,13 @@
        //INSERÇÃO DE DADOS
 
         printf("Digite o código da carta 01:");
-        scanf("%s", &codigo);
+        fgets(codigo, sizeof (codigo), stdin);
         
         printf("Digite seu estado:");
-        scanf("%s", estado);
+        fgets(estado, sizeof (estado), stdin);
         
         printf("Digite sua cidade:");
-        scanf("%s", cidade);
+        fgets(cidade, sizeof (cidade), stdin);
 
         printf("Digite a população:");
         scanf("%lu", &populacao);
@@ -29,6 +29,7 @@
 
         printf("Digite o número de pontos turísticos:");
         scanf("%d", &pontosturisticos);
+        getchar();
                
         
         //NOVOS ATRIBUTOS INSERIDOS NÍVEL INTERMEDIARIO UTILIZANDO O RESULTADO DA DIVISÃO PARA OBTER O RESULTADO ESPERADO
@@ -38,13 +39,13 @@
         superPoder1 = (populacao + area + pib + pontosturisticos + densidade + pibpercapita);
 
         printf("Digite o código da carta 02:");
-        scanf("%s", &codigo2);
+        fgets(codigo2, sizeof (codigo2), stdin);
         
         printf("Digite seu estado:");
-        scanf("%s", estado2);
+        fgets(estado2, sizeof (estado2), stdin);
         
         printf("Digite sua cidade:");
-        scanf("%s", cidade2);
+        fgets(cidade2, sizeof (cidade2), stdin);
 
         printf("Digite a população:");
         scanf("%lu", &populacao2);
@@ -69,9 +70,9 @@
         //IMPRESSÃO DAS CARTAS COMPLETAS JÁ COM DADOS INSERIDOS
         printf("\n");
         printf("CARTA 1\n");
-        printf("Código da carta: %s\n", codigo);
-        printf("Nome do Estado: %s\n", estado);
-        printf("Nome da cidade: %s\n", cidade);
+        printf("Código da carta: %s", codigo);
+        printf("Nome do Estado: %s", estado);
+        printf("Nome da cidade: %s", cidade);
         printf("População: %lu habitantes\n", populacao);
         printf("Área de: %.3f M²\n", area);
         printf("PIB de: %.2f bilhões de reais\n", pib);
@@ -82,9 +83,9 @@
     
         printf("\n\n");
         printf("CARTA 2\n");
-        printf("Código da carta: %s\n", codigo2);
-        printf("Nome do Estado: %s\n", estado2);
-        printf("Nome da cidade: %s\n", cidade2);
+        printf("Código da carta: %s", codigo2);
+        printf("Nome do Estado: %s", estado2);
+        printf("Nome da cidade: %s", cidade2);
         printf("População: %lu habitantes\n", populacao2);
         printf("Área de: %.3f M²\n", area2);
         printf("PIB de: %.2f bilhões de reais\n", pib2);
