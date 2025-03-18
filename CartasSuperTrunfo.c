@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
     int main(){    //VARIAVEIS//
         char estado[20], cidade[22], codigo[10], estado2[30], cidade2[40], codigo2[15];
@@ -11,12 +12,15 @@
 
         printf("Digite o código da carta 01:");
         fgets(codigo, sizeof (codigo), stdin);
+        codigo[strcspn(codigo, "\n")] = 0;
         
         printf("Digite seu estado:");
         fgets(estado, sizeof (estado), stdin);
+        estado[strcspn(estado, "\n")] = 0;
         
         printf("Digite sua cidade:");
         fgets(cidade, sizeof (cidade), stdin);
+        cidade[strcspn(cidade, "\n")] = 0;
         
         printf("Digite a população:");
         scanf("%lu", &populacao);
@@ -43,12 +47,15 @@
 
         printf("Digite o código da carta 02:");
         fgets(codigo2, sizeof (codigo2), stdin);
+        codigo2[strcspn(codigo2, "\n")] = 0;
         
         printf("Digite seu estado:");
         fgets(estado2, sizeof (estado2), stdin);
+        estado2[strcspn(estado2, "\n")] = 0;
         
         printf("Digite sua cidade:");
         fgets(cidade2, sizeof (cidade2), stdin);
+        cidade2[strcspn(cidade2, "\n")] = 0;
 
         printf("Digite a população:");
         scanf("%lu", &populacao2);
