@@ -105,7 +105,7 @@
 
         //INSERÇÃO DO MENU PARA QUE O ÚSUARIO SELECIONE O ATRIBUTO ESCOLHIDO
 
-        printf("** MENU PARA SELEÇÃO DE ATRIBUTOS PARA COMPARAÇÃO\n");
+        printf("** MENU PARA SELEÇÃO DE ATRIBUTOS PARA COMPARAÇÃO**\n");
         printf("Selecione um atributo para comparar:\n");
         printf("1. População.\n");
         printf("2. Área.\n");
@@ -118,6 +118,15 @@
         switch (opcao){           //IMPLEMENTAÇÃO DO SWITCH     
         case 1:
                printf("Você escolheu população.\n");
+               printf("%s: %lu habitantes.\n", estado, populacao);
+               printf("%s: %lu habitantes.\n", estado2, populacao2);
+
+             if (populacao > populacao2)
+               printf("Vencedor: CARTA 01 - %s\n", estado);
+              else if (populacao < populacao2)
+               printf("Vencedor: CARTA 02 - %s\n", estado2);
+              else 
+               printf("Atributo empatado.\n");  
 
         break;
         case 2:
