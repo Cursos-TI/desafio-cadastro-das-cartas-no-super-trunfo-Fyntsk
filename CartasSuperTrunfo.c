@@ -12,7 +12,7 @@
 
         printf("Digite o código da carta 01:");
         fgets(codigo, sizeof (codigo), stdin);
-        codigo[strcspn(codigo, "\n")] = 0;
+        codigo[strcspn(codigo, "\n")] = 0; //REMOVE O \n
         
         printf("Digite seu estado:");
         fgets(estado, sizeof (estado), stdin);
@@ -124,7 +124,7 @@
 
         switch (opcao){           //IMPLEMENTAÇÃO DO SWITCH     
         case 1:
-               printf("Você escolheu população.\n");
+               printf("Você escolheu: População.\n");
                printf("%s: %lu habitantes.\n", estado, populacao);
                printf("%s: %lu habitantes.\n", estado2, populacao2);
 
@@ -137,19 +137,55 @@
 
         break;
         case 2:
-               printf("Você escolheu Área.\n");
+               printf("Você escolheu: Área.\n");
+               printf("%s: %.3f M².\n", estado, area);
+               printf("%s: %.3f M².\n", estado2, area2);
+
+             if (area > area2)
+               printf("Vencedor: CARTA 01 - %s\n", estado);
+              else if (area < area2)
+               printf("Vencedor: CARTA 02 - %s\n", estado2);
+              else 
+               printf("Atributo empatado.\n");  
 
         break;
         case 3:
-               printf("Você escolheu PIB.\n");
+               printf("Você escolheu: PIB.\n");
+               printf("%s: %.2f bilhões de reais.\n", estado, pib);
+               printf("%s: %.2f bilhões de reais.\n", estado2, pib2);
+
+             if (pib > pib2)
+               printf("Vencedor: CARTA 01 - %s\n", estado);
+              else if (pib < pib2)
+               printf("Vencedor: CARTA 02 - %s\n", estado2);
+              else 
+               printf("Atributo empatado.\n");  
 
         break;
         case 4:
-               printf("Você escolheu pontos turísticos.\n");
+               printf("Você escolheu: Pontos turísticos.\n");
+               printf("%s: %d pontos turísticos.\n", estado, pontosturisticos);
+               printf("%s: %d pontos turísticos.\n", estado2, pontosturisticos2);
+
+             if (pontosturisticos > pontosturisticos2)
+               printf("Vencedor: CARTA 01 - %s\n", estado);
+              else if (pontosturisticos < pontosturisticos2)
+               printf("Vencedor: CARTA 02 - %s\n", estado2);
+              else 
+               printf("Atributo empatado.\n");  
 
         break;
         case 5:
-               printf("Você escolheu densidade populacional.\n");
+               printf("Você escolheu: Densidade populacional.\n");
+               printf("%s: %.2f hab/km².\n", estado, densidade);
+               printf("%s: %.2f hab/km².\n", estado2, densidade2);
+
+             if (densidade < densidade2)
+               printf("Vencedor: CARTA 01 - %s\n", estado);
+              else if (densidade > densidade2)
+               printf("Vencedor: CARTA 02 - %s\n", estado2);
+              else 
+               printf("Atributo empatado.\n");  
 
         break;
         default:
