@@ -162,7 +162,7 @@
                printf("%s: %.2f hab/km².\n", estado, densidade);
                printf("%s: %.2f hab/km².\n", estado2, densidade2);
 
-             if (resultado = (densidade > densidade2) ? 1 : (densidade < densidade2) ? 0 : -1);
+             if (resultado = (densidade < densidade2) ? 1 : (densidade > densidade2) ? 0 : -1);
                
 
         break;
@@ -207,7 +207,7 @@
               printf("%s: %.3f M².\n", estado, area);
               printf("%s: %.3f M².\n", estado2, area2);
 
-            if (resultado = (area > area2) ? 1 : (area < area2) ? 0 : -1);
+            if (resultado2 = (area > area2) ? 1 : (area < area2) ? 0 : -1);
              
        break;
        case 3:
@@ -215,7 +215,7 @@
               printf("%s: %.2f bilhões de reais.\n", estado, pib);
               printf("%s: %.2f bilhões de reais.\n", estado2, pib2);
 
-            if (resultado = (pib > pib2) ? 1 : (pib < pib2) ? 0 : -1);
+            if (resultado2 = (pib > pib2) ? 1 : (pib < pib2) ? 0 : -1);
                
        break;
        case 4:
@@ -223,7 +223,7 @@
               printf("%s: %d pontos turísticos.\n", estado, pontosturisticos);
               printf("%s: %d pontos turísticos.\n", estado2, pontosturisticos2);
 
-            if (resultado = (pontosturisticos > pontosturisticos2) ? 1 : (pontosturisticos < pontosturisticos2) ? 0 : -1);
+            if (resultado2 = (pontosturisticos > pontosturisticos2) ? 1 : (pontosturisticos < pontosturisticos2) ? 0 : -1);
                
        break;
        case 5:
@@ -231,7 +231,7 @@
               printf("%s: %.2f hab/km².\n", estado, densidade);
               printf("%s: %.2f hab/km².\n", estado2, densidade2);
 
-            if (resultado = (densidade > densidade2) ? 1 : (densidade < densidade2) ? 0 : -1);
+            if (resultado2 = (densidade < densidade2) ? 1 : (densidade > densidade2) ? 0 : -1);
               
 
        break;
