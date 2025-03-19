@@ -130,7 +130,7 @@
                printf("%s: %lu habitantes.\n", estado, populacao);
                printf("%s: %lu habitantes.\n", estado2, populacao2);
 
-             if (resultado = populacao > populacao2 ? 1 : 0);
+             if  (resultado = (populacao > populacao2) ? 1 : (populacao < populacao2) ? 0 : -1);
                
         break;
         case 2:
@@ -138,7 +138,7 @@
                printf("%s: %.3f M².\n", estado, area);
                printf("%s: %.3f M².\n", estado2, area2);
 
-             if (resultado = area > area2 ? 1 : 0);
+             if (resultado = (area > area2) ? 1 : (area < area2) ? 0 : -1);
               
         break;
         case 3:
@@ -146,7 +146,7 @@
                printf("%s: %.2f bilhões de reais.\n", estado, pib);
                printf("%s: %.2f bilhões de reais.\n", estado2, pib2);
 
-             if (resultado = pib > pib2 ? 1 : 0);
+             if (resultado = (pib > pib2) ? 1 : (pib < pib2) ? 0 : -1);
                 
         break;
         case 4:
@@ -154,7 +154,7 @@
                printf("%s: %d pontos turísticos.\n", estado, pontosturisticos);
                printf("%s: %d pontos turísticos.\n", estado2, pontosturisticos2);
 
-             if (resultado = pontosturisticos > pontosturisticos2 ? 1 : 0);
+             if (resultado = (pontosturisticos > pontosturisticos2) ? 1 : (pontosturisticos < pontosturisticos2) ? 0 : -1);
                 
         break;
         case 5:
@@ -162,13 +162,23 @@
                printf("%s: %.2f hab/km².\n", estado, densidade);
                printf("%s: %.2f hab/km².\n", estado2, densidade2);
 
-             if (resultado = densidade < densidade2 ? 1 : 0);
+             if (resultado = (densidade > densidade2) ? 1 : (densidade < densidade2) ? 0 : -1);
                
 
         break;
         default:
                printf("Opção inválida.\n");
         }      
+
+        if (resultado == 1){
+              printf("CARTA 01 - %s VENCEU!\n", estado);
+  
+              } else if (resultado == 0) {
+                printf("CARTA 02 - %s VENCEU!\n",estado2);
+  
+              } else {
+                printf("Atributo empatado!\n");  
+              } 
        
         printf("Selecione um segundo atributo para comparação:\n");
         printf("1. População.\n");
@@ -189,7 +199,7 @@
               printf("%s: %lu habitantes.\n", estado, populacao);
               printf("%s: %lu habitantes.\n", estado2, populacao2);
 
-            if (resultado2 = populacao > populacao2 ? 1 : 0);
+            if (resultado2 = (populacao > populacao2) ? 1 : (populacao < populacao2) ? 0 : -1);
               
        break;
        case 2:
@@ -197,7 +207,7 @@
               printf("%s: %.3f M².\n", estado, area);
               printf("%s: %.3f M².\n", estado2, area2);
 
-            if (resultado2 = area > area2 ? 1 : 0);
+            if (resultado = (area > area2) ? 1 : (area < area2) ? 0 : -1);
              
        break;
        case 3:
@@ -205,7 +215,7 @@
               printf("%s: %.2f bilhões de reais.\n", estado, pib);
               printf("%s: %.2f bilhões de reais.\n", estado2, pib2);
 
-            if (resultado2 = pib > pib2 ? 1 : 0);
+            if (resultado = (pib > pib2) ? 1 : (pib < pib2) ? 0 : -1);
                
        break;
        case 4:
@@ -213,7 +223,7 @@
               printf("%s: %d pontos turísticos.\n", estado, pontosturisticos);
               printf("%s: %d pontos turísticos.\n", estado2, pontosturisticos2);
 
-            if (resultado2 = pontosturisticos > pontosturisticos2 ? 1 : 0);
+            if (resultado = (pontosturisticos > pontosturisticos2) ? 1 : (pontosturisticos < pontosturisticos2) ? 0 : -1);
                
        break;
        case 5:
@@ -221,7 +231,7 @@
               printf("%s: %.2f hab/km².\n", estado, densidade);
               printf("%s: %.2f hab/km².\n", estado2, densidade2);
 
-            if (resultado2 = densidade < densidade2 ? 1 : 0);
+            if (resultado = (densidade > densidade2) ? 1 : (densidade < densidade2) ? 0 : -1);
               
 
        break;
@@ -230,15 +240,15 @@
        }
        
        
-       if (resultado == 1){
+       if (resultado2 == 1){
             printf("CARTA 01 - %s VENCEU!\n", estado);
 
-            } else if (resultado == 0) {
+            } else if (resultado2 == 0) {
               printf("CARTA 02 - %s VENCEU!\n",estado2);
 
-            } else
+            } else {
               printf("Atributo empatado!\n");  
-             
+            } 
 
         return 0;
    
